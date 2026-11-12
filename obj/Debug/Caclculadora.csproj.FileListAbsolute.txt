@@ -1,0 +1,10 @@
+C:\Diseño\Caclculadora\Caclculadora\bin\Debug\Caclculadora.exe.config
+C:\Diseño\Caclculadora\Caclculadora\bin\Debug\Caclculadora.exe
+C:\Diseño\Caclculadora\Caclculadora\bin\Debug\Caclculadora.pdb
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.csproj.AssemblyReference.cache
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.Form1.resources
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.Properties.Resources.resources
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.csproj.GenerateResource.cache
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.csproj.CoreCompileInputs.cache
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.exe
+C:\Diseño\Caclculadora\Caclculadora\obj\Debug\Caclculadora.pdb

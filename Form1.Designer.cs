@@ -42,7 +42,7 @@
             this.btnresta = new System.Windows.Forms.Button();
             this.btnmultiplicacion = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.resultadotxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn8
@@ -53,6 +53,7 @@
             this.btn8.TabIndex = 0;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -62,6 +63,7 @@
             this.btn7.TabIndex = 1;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn9
             // 
@@ -71,6 +73,7 @@
             this.btn9.TabIndex = 2;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn6
             // 
@@ -90,6 +93,7 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btnsuma
             // 
@@ -108,6 +112,7 @@
             this.btn4.TabIndex = 6;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn1
             // 
@@ -117,6 +122,7 @@
             this.btn1.TabIndex = 7;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -136,6 +142,7 @@
             this.btn3.TabIndex = 9;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnigual
             // 
@@ -163,6 +170,7 @@
             this.btnmultiplicacion.TabIndex = 12;
             this.btnmultiplicacion.Text = "*";
             this.btnmultiplicacion.UseVisualStyleBackColor = true;
+            this.btnmultiplicacion.Click += new System.EventHandler(this.btnmultiplicacion_Click);
             // 
             // btnclear
             // 
@@ -173,19 +181,19 @@
             this.btnclear.Text = "C";
             this.btnclear.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // resultadotxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(339, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 22);
-            this.textBox1.TabIndex = 14;
+            this.resultadotxt.Location = new System.Drawing.Point(339, 121);
+            this.resultadotxt.Name = "resultadotxt";
+            this.resultadotxt.Size = new System.Drawing.Size(174, 22);
+            this.resultadotxt.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.resultadotxt);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btnmultiplicacion);
             this.Controls.Add(this.btnresta);
@@ -223,7 +231,7 @@
         private System.Windows.Forms.Button btnresta;
         private System.Windows.Forms.Button btnmultiplicacion;
         private System.Windows.Forms.Button btnclear;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox resultadotxt;
     }
 }
 
