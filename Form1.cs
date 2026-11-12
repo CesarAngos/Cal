@@ -32,6 +32,9 @@ namespace Caclculadora
 
         private void btnmultiplicacion_Click(object sender, EventArgs e)
         {
+            numero1 = Convert.ToDouble(resultadotxt.Text);
+            operacion = "*";
+            resultadotxt.Text = "";
 
         }
 
@@ -63,6 +66,76 @@ namespace Caclculadora
         private void btn8_Click(object sender, EventArgs e)
         {
             resultadotxt.Text = btn8.Text;
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+            resultadotxt.Clear();
+        }
+
+        private void btnigual_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(resultadotxt.Text, out numero2))
+            {
+                MessageBox.Show("Ingrese un segundo numero");
+                return;
+            }
+            double resultado = 0;
+
+            switch (operacion)
+            {
+                case "+":
+                    resultado = numero1 + numero2;
+                    break;
+
+                case "-":
+                    resultado = numero1 - numero2;
+                    break;
+
+                case "*":
+                    resultado = numero1 * numero2;
+                    break;
+
+                case "/":
+                    if (numero2 == 0)
+                    {
+                        MessageBox.Show("No se puede dividir para cero");
+                        return;
+                    }
+
+                    resultado = numero1 / numero2;
+                    break;
+
+
+
+
+            }
+            resultadotxt.Text = resultado.ToString();
+
+        }
+
+        private void btnsuma_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(resultadotxt.Text);
+            operacion = "+";
+            resultadotxt.Text = "";
+
+        }
+
+        private void btnresta_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(resultadotxt.Text);
+            operacion = "-";
+            resultadotxt.Text = "";
+
+        }
+
+        private void btndividir_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(resultadotxt.Text);
+            operacion = "/";
+            resultadotxt.Text = "";
+
         }
 
         private void btn9_Click(object sender, EventArgs e)

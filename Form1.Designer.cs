@@ -43,6 +43,7 @@
             this.btnmultiplicacion = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
             this.resultadotxt = new System.Windows.Forms.TextBox();
+            this.btndividir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn8
@@ -103,6 +104,7 @@
             this.btnsuma.TabIndex = 5;
             this.btnsuma.Text = "+";
             this.btnsuma.UseVisualStyleBackColor = true;
+            this.btnsuma.Click += new System.EventHandler(this.btnsuma_Click);
             // 
             // btn4
             // 
@@ -152,6 +154,7 @@
             this.btnigual.TabIndex = 10;
             this.btnigual.Text = "=";
             this.btnigual.UseVisualStyleBackColor = true;
+            this.btnigual.Click += new System.EventHandler(this.btnigual_Click);
             // 
             // btnresta
             // 
@@ -161,6 +164,7 @@
             this.btnresta.TabIndex = 11;
             this.btnresta.Text = "-";
             this.btnresta.UseVisualStyleBackColor = true;
+            this.btnresta.Click += new System.EventHandler(this.btnresta_Click);
             // 
             // btnmultiplicacion
             // 
@@ -180,6 +184,7 @@
             this.btnclear.TabIndex = 13;
             this.btnclear.Text = "C";
             this.btnclear.UseVisualStyleBackColor = true;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // resultadotxt
             // 
@@ -188,11 +193,22 @@
             this.resultadotxt.Size = new System.Drawing.Size(174, 22);
             this.resultadotxt.TabIndex = 14;
             // 
+            // btndividir
+            // 
+            this.btndividir.Location = new System.Drawing.Point(451, 196);
+            this.btndividir.Name = "btndividir";
+            this.btndividir.Size = new System.Drawing.Size(75, 23);
+            this.btndividir.TabIndex = 15;
+            this.btndividir.Text = "/";
+            this.btndividir.UseVisualStyleBackColor = true;
+            this.btndividir.Click += new System.EventHandler(this.btndividir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btndividir);
             this.Controls.Add(this.resultadotxt);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btnmultiplicacion);
@@ -232,6 +248,7 @@
         private System.Windows.Forms.Button btnmultiplicacion;
         private System.Windows.Forms.Button btnclear;
         private System.Windows.Forms.TextBox resultadotxt;
+        private System.Windows.Forms.Button btndividir;
     }
 }
 
